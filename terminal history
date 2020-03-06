@@ -1,0 +1,109 @@
+grand@grand-Aspire-A515-54G:~/patchwork$ .
+bash: .: nom de fichier nécessaire en argument
+. : utilisation : . nom_fichier [arguments]
+grand@grand-Aspire-A515-54G:~/patchwork$ ../
+bash: ../ : est un dossier
+grand@grand-Aspire-A515-54G:~/patchwork$ cd
+grand@grand-Aspire-A515-54G:~$ sudo apt get install libgconf-2-4
+[sudo] Mot de passe de grand : 
+E: L'opération get n'est pas valable
+grand@grand-Aspire-A515-54G:~$ sudo apt-get install libgconf-2-4
+Lecture des listes de paquets... Fait
+Construction de l'arbre des dépendances       
+Lecture des informations d'état... Fait
+libgconf-2-4 est déjà la version la plus récente (3.2.6-4ubuntu1).
+Les paquets suivants ont été installés automatiquement et ne sont plus nécessaires :
+  gir1.2-geocodeglib-1.0 gir1.2-gst-plugins-base-1.0 gir1.2-gstreamer-1.0 gir1.2-gudev-1.0
+  gir1.2-udisks-2.0 grilo-plugins-0.3-base gstreamer1.0-gtk3 libcdr-0.1-1 libcolamd2 libdazzle-1.0-0
+  libe-book-0.1-1 libedataserverui-1.2-2 libepubgen-0.1-1 libetonyek-0.1-1 libevent-2.1-6 libexiv2-14
+  libfreerdp-client2-2 libfreerdp2-2 libfwup1 libgc1c2 libgee-0.8-2 libgexiv2-2 libgom-1.0-0
+  libgpod-common libgpod4 liblirc-client0 libllvm8 liblua5.3-0 libmediaart-2.0-0 libmspub-0.1-1
+  libodfgen-0.1-1 libqqwing2v5 libraw16 libsgutils2-2 libssh-4 libsuitesparseconfig5 libvncclient1
+  libwayland-egl1-mesa libwinpr2-2 libxapian30 lp-solve media-player-info python3-mako
+  python3-markupsafe syslinux syslinux-common syslinux-legacy usb-creator-common
+Veuillez utiliser « sudo apt autoremove » pour les supprimer.
+0 mis à jour, 0 nouvellement installés, 0 à enlever et 0 non mis à jour.
+grand@grand-Aspire-A515-54G:~$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+grand@grand-Aspire-A515-54G:~$ git clone git@github.com:bengrand-developer/sharezza-social.git
+Clonage dans 'sharezza-social'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Réception d'objets: 100% (6/6), fait.
+grand@grand-Aspire-A515-54G:~$ remote -v
+
+La commande « remote » n'a pas été trouvée, mais peut être installée avec :
+
+sudo snap install remote
+
+grand@grand-Aspire-A515-54G:~$ git remote -v
+fatal: ni ceci ni aucun de ses répertoires parents n'est un dépôt git : .git
+grand@grand-Aspire-A515-54G:~$ ls
+biarritz.csv  history.txt                       Modèles              quetes           Vidéos
+Bureau        Images                            Musique              sharezza-social  wilders.csv
+Documents     javascript_biarritz_toulouse.csv  patchwork            snap
+Downloads     javascript.csv                    php_france_2019.csv  Téléchargements
+hello-world   live                              Public               toulouse.csv
+grand@grand-Aspire-A515-54G:~$ cd sharezza-social/
+grand@grand-Aspire-A515-54G:~/sharezza-social$ ls
+index.html  README.md
+grand@grand-Aspire-A515-54G:~/sharezza-social$ git remote -v
+origin	git@github.com:bengrand-developer/sharezza-social.git (fetch)
+origin	git@github.com:bengrand-developer/sharezza-social.git (push)
+grand@grand-Aspire-A515-54G:~/sharezza-social$ git status
+Sur la branche master
+Votre branche est à jour avec 'origin/master'.
+
+Modifications qui ne seront pas validées :
+  (utilisez "git add <fichier>..." pour mettre à jour ce qui sera validé)
+  (utilisez "git checkout -- <fichier>..." pour annuler les modifications dans la copie de travail)
+
+	modifié :         index.html
+
+aucune modification n'a été ajoutée à la validation (utilisez "git add" ou "git commit -a")
+grand@grand-Aspire-A515-54G:~/sharezza-social$ git add index.html
+
+grand@grand-Aspire-A515-54G:~/sharezza-social$ git commit -m "rajout Kaamelott"
+[master e222820] rajout Kaamelott
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+grand@grand-Aspire-A515-54G:~/sharezza-social$ git status
+Sur la branche master
+Votre branche est en avance sur 'origin/master' de 1 commit.
+  (utilisez "git push" pour publier vos commits locaux)
+
+rien à valider, la copie de travail est propre
+grand@grand-Aspire-A515-54G:~/sharezza-social$ git push origin master
+Décompte des objets: 3, fait.
+Delta compression using up to 8 threads.
+Compression des objets: 100% (3/3), fait.
+Écriture des objets: 100% (3/3), 392 bytes | 392.00 KiB/s, fait.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:bengrand-developer/sharezza-social.git
+   e2d5730..e222820  master -> master
+grand@grand-Aspire-A515-54G:~/sharezza-social$ 
